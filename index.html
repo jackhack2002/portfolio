@@ -10,27 +10,25 @@
     
     <title>JACOB | HOME</title>
           <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         
 </head>
-        
-        <body class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/bghome.jpg');">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-      <nav class="fixed top-0 left-0 right-0 z-10 flex justify-around w-full py-3 border-gray-200 rounded-lg shadow-md bg-stone-300 dark:bg-gray-900 dark:border-gray-700 bg-white/80 backdrop-blur-md">
+ <body  >
 
-        <a href="index.html" class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md" aria-current="page">HOME</a>
+  <nav class="fixed top-0 left-0 right-0 z-10 flex justify-around w-full py-3 border-gray-500 rounded-lg shadow-md bg-stone-400 dark:bg-gray-900 dark:border-gray-700 bg-white/80 backdrop-blur-md">
 
-        <a href="education.html" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white">EDUCATION</a>
+        <a href="#home" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">HOME</a>
 
-        <a href="projects.html" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white">PROJECTS</a>
+        <a href="#education" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">EDUCATION</a>
 
-        <a href="achievements.html" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white">ACHIEVEMENTS</a>
+        <a href="#projects" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">PROJECTS</a>
 
-        <a href="skill.html" class="px-3 py-2 text-sm font-medium text-white rounded-md hover:bg-gray-700 hover:text-white">SKILLS</a>
+        <a href="#achievements" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">ACHIEVEMENTS</a>
+
+        <a href="#skill" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">SKILLS</a>
 
       </nav>
 
-        
+      <section id="home" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover"  style="background-image:url('./assets/img/bghome.jpg');">
         <br><br><br><br><br><br><br><br>
           <div class="static flex flex-wrap items-center max-w-4xl mx-auto my-32 shadow-2xl h-max lg:my-0">
             
@@ -67,49 +65,11 @@
           
           </div>
     
-            <div class="absolute top-0 right-0 h-12 p-4 w-18">
-            <button class="js-change-theme focus:outline-none">🌙</button>
-            </div>
-        
-       
-        
-          <script src="https://unpkg.com/popper.js@1/dist/umd/popper.min.js"></script>
-          <script src="https://unpkg.com/tippy.js@4"></script>
-          <script>
-            tippy('.link',{
-              placement: 'bottom'
-            })
-        
-            const toggle = document.querySelector('.js-change-theme');
-            const body = document.querySelector('body');
-            const profile = document.getElementById('profile');
-            
-            
-            toggle.addEventListener('click', () => {
-        
-              if (body.classList.contains('text-gray-900')) {
-              toggle.innerHTML = "☀️";
-              body.classList.remove('text-gray-900');
-              body.classList.add('text-gray-100');
-              profile.classList.remove('bg-white');
-              profile.classList.add('bg-gray-900');
-              } else
-              {
-              toggle.innerHTML = "🌙";
-              body.classList.remove('text-gray-100');
-              body.classList.add('text-gray-900');
-              profile.classList.remove('bg-gray-900');			
-              profile.classList.add('bg-white');
-              
-              }
-            });
-            
-            </script>
             <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
             <script>
                    
               var typed = new Typed(".auto-type",{
-                strings : ["Android Developer","Ethical Hacker", "Web Developer",],
+                strings : ["Android Developer","Web Developer","Ethical Hacker"],
                 loop:true,
                 typeSpeed:100,
                 backSpeed:60,
@@ -117,5 +77,283 @@
                 
               })
             </script>
+            <br><br><br><br><br><br>
+      </section>
+
+      <section id="education" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/education.jpg');" >
+        <br><br><br><br>
+        <div class="text-center text-6xl text-red-600 font-serif ">
+          EDUCATION
+        </div>  
+        <br><br><br>     
+        <div class="h-64 max-w-4xl mx-auto overflow-hidden bg-white shadow-md rounded-xl md:max-w-6xl">
+          <div class="md:flex">
+            <div class="p-8">
+              <div class="text-sm font-extrabold tracking-wide text-indigo-500 uppercase">HSC EDUCATION</div>
+              <p class="text-lg font-extrabold">St. Threasa's mat.hr.sec.school</p>
+              <p class="mt-2 text-slate-500">STATE BOARD OF SCHOOL EDUCATION, <br>TAMIL NADU board,<br>Year of completion : 2019,<br>PERCENTAGE : 58.33%.</p>
+            </div>
+            <div class="md:shrink-0">
+              <img class="object-cover w-full h-64 md:h-64" src="./assets/img/edu_places/school.jpg" alt="Modern building architecture">
+            </div>
+            <div class="p-8">
+              <div class="text-sm font-extrabold tracking-wide text-indigo-500 uppercase">SSLC EDUCATION</div>
+              <p class="text-lg font-extrabold">St. Threasa's mat.hr.sec.school</p>
+              <p class="mt-2 text-slate-500">STATE BOARD OF SCHOOL EDUCATION, <br>TAMIL NADU board,<br>Year of completion : 2017,<br>PERCENTAGE : 82.66%.</p>
+            </div>
+          </div>
+        </div>
+        <br><br>
+
+        <br><br>
+
+        <div class="h-64 max-w-4xl mx-auto overflow-hidden bg-white shadow-md rounded-xl md:max-w-6xl">
+          <div class="md:flex">
+            <div class="md:shrink-0">
+              <img class="object-cover w-full h-64 md:h-64" src="./assets/img/edu_places/college.jpg" alt="Modern building architecture">
+            </div>
+            <div class="p-8">
+              <div class="text-sm font-extrabold tracking-wide text-indigo-500 uppercase">BACHELOR OF ENGINEERING</div>
+              <p class="text-lg font-extrabold">JAYA ENGINEERING COLLEGE</p>
+              <p class="mt-2 text-slate-500">STATE BOARD OF SCHOOL EDUCATION, <br>TAMIL NADU board,<br>Year of completion : 2023,<br>CGPA :7.0.</p>
+            </div>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+      </section>
+
+      <section id="projects" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/projects.jpg');" >  
+        <br><br><br><br>
+        <div class="text-center text-6xl text-red-600 font-serif ">
+          PROJECTS
+        </div>  
+        <br><br><br>
+
+
+<div class="max-w-4xl mx-auto overflow-hidden bg-white shadow-md max-h-68 rounded-xl md:max-w-6xl">
+ 
+    <div class="md:flex">
+      <div class="md:shrink-0">
+        <img class="object-cover w-full h-full md:h-64" src="./assets/img/projectlogo.jpg" alt="Modern building architecture">
+      </div>
+      <div class="p-8">
+        <div class="text-sm font-extrabold tracking-wide text-indigo-500 uppercase">DIGITAL AMBULANCE SERVICE APP</div>
+        <p class="text-lg font-extrabold">APPLICATION FOR DIGITAL AMBULANCE SERVICES</p>
+        <p class="mt-2 text-slate-500">This product is a new, <br> product based on the present emergency condition of our society.<br> It will help users to get ambulance services in any emergency condition.<br> People will not have to call and wait for ambulance. <br>Using this product users can track the ambulance<br>
+        <br><a class="px-3 py-2 text-sm font-medium text-white bg-gray-900 rounded-md" href="https://github.com/jackhack2002/Emergency-Ambulance-Service-.git">Click here to view more</a></p>
+      </div>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+  <br><br><br><br><br><br>
+      </section>
+        
+
+      <section id="achievements" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/achievements.jpg');">
+      
+        <br><br><br><br>
+        <div class="text-center text-6xl text-red-600 font-serif ">
+          ACHIEVEMENTS
+        </div>  
+        
+<div class="grid grid-cols-4 gap-16 p-20">
+  <img class="w-full h-full object-cover cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...""
+      src="./assets/img/certificates/AI_Introduction_Webinar_Certificate.jpg"  
+      onclick="showModal('./assets/img/certificates/AI_Introduction_Webinar_Certificate.jpg')" />
+
+  <img class="w-full h-full object-cover cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...""
+      src="./assets/img/certificates/python course.jpg"  
+      onclick="showModal('./assets/img/certificates/python course.jpg')" />
+  
+  <img class="w-full h-full object-cover cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...""
+      src="./assets/img/certificates/nodejs.jpg"  
+      onclick="showModal('./assets/img/certificates/nodejs.jpg')" />
+
+  <img class="w-full h-full object-cover cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...""
+      src="./assets/img/certificates/Intro to cyber security.jpg"  
+      onclick="showModal('./assets/img/certificates/Intro to cyber security.jpg')" />
+</div>
+
+
+<div class="grid grid-cols-4 gap-16 p-20">
+  <img class="w-full h-full object-cover cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...""
+  src="./assets/img/certificates/es6_basic_javascript.jpg"  
+  onclick="showModal('./assets/img/certificates/es6_basic_javascript.jpg')" />
+
+<img class="w-full h-full object-cover cursor-pointer transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ...""
+  src="./assets/img/certificates/vm_course.jpg"
+  onclick="showModal('./assets/img/certificates/vm_course.jpg')" />
+
+
+</div>
+
+
+<!-- The Modal -->
+<div id="modal"
+  class="fixed top-0 left-0 items-center justify-center hidden w-screen h-screen z-80 bg-black/70">
+
+  <!-- The close button --><br><br>
+  <a class="fixed text-5xl font-bold text-white z-90 top-6 right-8" href="javascript:void(0)"
+      onclick="closeModal()">&times;</a>
+
+  <!-- A big image will be displayed here -->
+  <img id="modal-img" class="max-w-[800px] max-h-[600px] object-cover" />
+</div>
+
+<script>
+  // Get the modal by id
+  var modal = document.getElementById("modal");
+
+  // Get the modal image tag
+  var modalImg = document.getElementById("modal-img");
+
+  // this function is called when a small image is clicked
+  function showModal(src) {
+      modal.classList.remove('hidden');
+      modalImg.src = src;
+  }
+
+  // this function is called when the close button is clicked
+  function closeModal() {
+      modal.classList.add('hidden');
+  }
+  
+</script>
+      </section>
+
+      <section id="skill" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/skills.jpg');">
+
+        <br><br><br>
+        <div class="text-center text-6xl text-red-600 font-serif ">
+          SKILLS
+        </div>  
+        <br>
+        <div class="grid grid-cols-4 gap-16 p-20">
+
+          <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/pythonround@2x.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">PYTHON</div>
+                      <br>
+                      <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 70%">Intermediate</div><br>
+                              </div> 
+                        </div>                         
+                </div>
+
+                <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/andriod_studio.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">ANDROID STUDIO</div>                        <br>
+                          <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                    <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 70%" >Intermediate</div><br>
+                                  </div> 
+                            </div>                         
+                    </div>
+
+                <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/tailwindcss.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">TAILWIND CSS</div>
+                          <br>
+                          <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                    <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 70%" >Intermediate</div><br>
+                                  </div> 
+                            </div>                         
+                    </div>
+
+
+                <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/github.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">GITHUB</div>
+                          <br>
+                          <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                    <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 80%" >Intermediate</div><br>
+                                  </div> 
+                            </div>                         
+                    </div>
+        
+                    
+
+                              
+                <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/html.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">HTML</div>
+                      <br>
+                      <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 70%" >Intermediate</div><br>
+                              </div> 
+                        </div>                         
+                </div>
+
+                
+
+                <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/adobephotoshop.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">ADOBE PHOTOSHOP</div>
+                          <br>
+                          <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                    <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 75%" >Intermediate</div><br>
+                                  </div> 
+                            </div>                         
+                    </div>
+
+
+                <div>
+                    <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                        <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                        <img class="w-full rounded-t-3xl"
+                          src="./assets/img/skill_pics/mysql.jpg"
+                          alt="Photo by aldi sigun on Unsplash" /></div>
+                          <div class="font-serif text-lg font-bold">My SQL</div>
+                          <br>
+                          <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                    <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 75%" >Intermediate</div><br>
+                                  </div> 
+                            </div>                         
+                    </div>
+        
+
+                    
+
+                    <div>
+                      <div class="flex flex-wrap justify-center transition duration-300 ease-in-out delay-150 bg-gray-200 dark:bg-gray-900 rounded-3xl hover:-translate-y-1 hover:scale-110 ">
+                          <div class="container max-w-lg m-12 bg-white rounded shadow-lg dark:bg-gray-800 ">
+                          <img class="w-full rounded-t-3xl"
+                            src="./assets/img/skill_pics/firebase.png"
+                            alt="Photo by aldi sigun on Unsplash" /></div>
+                            <div class="font-serif text-lg font-bold">FireBase</div>
+                            <br>
+                            <div class="w-full h-8 bg-gray-800 rounded-full dark:bg-gray-700">
+                                      <div class="h-8 text-center text-white bg-blue-600 rounded-full" style="width: 70%" >Intermediate</div><br>
+                                    </div> 
+                              </div>                         
+                      </div>
+     
+        
+      </section>
+        
 </body>
 </html>
