@@ -10,26 +10,47 @@
     
     <title>JACOB PORTFOLIO</title>
           <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/> 
-        
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </head>
  <body class="items-stretch" >
 
-  <nav class="fixed top-0 left-0 right-0 z-10 flex justify-around w-full py-3 border-gray-500 shadow-md bg-stone-400 dark:bg-gray-900 dark:border-gray-700 bg-white/80 backdrop-blur-md">
+  <nav class="md:fixed flex justify-between items-center mx-auto max-w-full">
+      <div class="nav-links duration-500 md:static absolute bg-white md:min-h-min min-h-[20vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+        <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+          <li>
+            <a href="#home" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-gray-700 hover:text-white">HOME</a>
+          </li>
 
-        <a href="#home" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">HOME</a>
+          <li>
+            <a href="#education" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-gray-700 hover:text-white">EDUCATION</a>
+          </li>
 
-        <a href="#education" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">EDUCATION</a>
+          <li>
+            <a href="#projects" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-gray-700 hover:text-white">PROJECTS</a>
+          </li>
 
-        <a href="#projects" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">PROJECTS</a>
+          <li>
+            <a href="#achievements" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-gray-700 hover:text-white">ACHIEVEMENTS</a>
+          </li>
 
-        <a href="#achievements" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">ACHIEVEMENTS</a>
+          <li>
+            <a href="#skill" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-gray-700 hover:text-white">SKILLS</a>
+          </li>
 
-        <a href="#skill" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">SKILLS</a>
+          <li>
+            <a href="#contact" class="px-3 py-2 text-sm font-medium text-black rounded-md hover:bg-gray-700 hover:text-white">FOR CONTACT</a>
+          </li>
 
-        <a href="#contact" class="px-3 py-2 text-sm font-medium text-blue-600 rounded-md hover:bg-gray-700 hover:text-white">FOR CONTACT</a>
+        </ul>
+
+      </div>
+      <div class="flex items-center gap-6">
+        <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+     </nav>
+      
 
 
-      </nav>
 <!--HOME SECTION-->
       <section id="home" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover"  style="background-image:url('./assets/img/bghome.jpg');">
         <br><br><br><br><br><br><br><br>
@@ -83,7 +104,7 @@
 <!--EDUCATION SECTION-->
       <section id="education" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover items-center" style="background-image:url('./assets/img/bghome.jpg');" >
         <br><br><br><br>
-        <div class="text-center text-6xl text-red-600 font-serif ">
+        <div class="text-center text-4xl text-red-600 font-serif ">
           EDUCATION
         </div>  
         <br><br><br>     
@@ -131,7 +152,7 @@
 <!--PROJECTS SECTION-->
 <section id="projects" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover items-center" style="background-image:url('./assets/img/bghome.jpg');" >  
   <br><br>
-  <div class="text-center text-6xl text-red-600 font-serif ">
+  <div class="text-center text-4xl text-red-600 font-serif ">
     PROJECTS
   </div>  
   <br><br>
@@ -180,7 +201,7 @@
       <section id="achievements" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/bghome.jpg');">
       
         <br><br><br><br>
-        <div class="text-center text-6xl text-red-600 font-serif ">
+        <div class="text-center text-4xl text-red-600 font-serif ">
           ACHIEVEMENTS
         </div>  <br><br>
         
@@ -249,7 +270,7 @@
       <section id="skill" class="font-sans antialiased leading-normal tracking-wider text-gray-900 bg-no-repeat bg-cover" style="background-image:url('./assets/img/bghome.jpg');">
 
         <br><br><br>
-        <div class="text-center text-6xl text-red-600 font-serif ">
+        <div class="text-center text-4xl text-red-600 font-serif ">
           SKILLS
         </div>  
         <br>
@@ -396,5 +417,14 @@
                           </form><br><br><br><br><br><br>
                         </div>
                       </section>
+
+
+                      <script>
+                        const navLinks = document.querySelector('.nav-links')
+                        function onToggleMenu(e){
+                          e.name = e.name === 'menu' ? 'close' : 'menu'
+                          navLinks.classList.toggle('top-[9%]')
+                        }
+                      </script>
 </body>
 </html>
